@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ClubVoid | Elegant Streetwear</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">ClubVoid</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Lookbook</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Enter the Void</h1>
+    <p>Minimal. Elevated. Bold silhouettes for modern expression.</p>
+    <a href="#" class="btn">Shop Now</a>
+  </section>
+
+  <section class="products">
+    <h2>Featured Pieces</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="Void Tee"/>
+        <h3>Blackout Tee</h3>
+        <p>$39.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="Void Hoodie"/>
+        <h3>Oversized Hoodie</h3>
+        <p>$79.00</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x400" alt="Void Cargo Pants"/>
+        <h3>Midnight Cargo</h3>
+        <p>$89.00</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ClubVoid. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #111;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #0f0f0f, #1a1a1a);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #aaa;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  background: #fff;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 2px;
+}
+
+/* Products Section */
+.products {
+  padding: 3rem 2rem;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  width: 300px;
+}
+
+.product img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.product p {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.product button {
+  background: #fff;
+  color: #000;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #111;
+  font-size: 0.9rem;
+  color: #777;
+}
